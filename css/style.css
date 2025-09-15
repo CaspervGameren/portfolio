@@ -1,0 +1,42 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 8px 20px;
+    margin: 0;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+}
+
+nav {
+    top: 0;
+    background-color: red;
+}
+
+header {
+    background-color: purple;
+    height: 60dvh;
+}
+
+main {
+    background-color: green;
+}
+
+section {
+    background-color: yellow;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: blue;
+}
