@@ -1,3 +1,11 @@
+:root {
+    --padding: 8px 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
@@ -31,13 +39,43 @@ header {
     height: 60dvh;
 }
 
-main {
-    background-color: green;
+section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+    padding: var(--padding);
+    align-content: center;
 }
 
-section {
-    background-color: yellow;
-    height: 100dvh;
+section div {
+    flex: 1;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 8px;
+    background: var(--secondairy-color);
+    overflow: hidden;
+    transition: 1s ease;
+    box-shadow: 0 5px 16px 1px rgba(0, 0, 0, 0.4);
+}
+
+section div:hover {
+    transition: 1s ease;
+    transform: scale(1.05);
+}
+
+section img {
+    width: 100%;
+    height: 20dvh;
+    object-fit: cover;
+    transition: 1s ease;
+}
+
+section img:hover {
+    transition: 1s ease;
+    transform: scale(1.10);
 }
 
 footer {
