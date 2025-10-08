@@ -1,9 +1,22 @@
 :root {
     --padding: 8px 20px;
+    --padding-small: 6px 10px;
+    --padding-big: 20px 20px;
+    --box-shadow-black: 0 6px 15px rgba(0, 0, 0, 0.1);
+    --box-shadow-gradient: 0 0 12px rgba(79, 70, 229, 0.5);
+    --bg-color: #ffffff;
+    --primary-color: #4f46e5;
+    --secondairy-color: #9333ea;
+    --gradient: linear-gradient(135deg, #4f46e5, #9333ea);
 }
+
 
 * {
     box-sizing: border-box;
+    padding: var(--padding);
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
 }
 
 html,
@@ -11,13 +24,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6, p, a {
-    padding: 8px 20px;
-    margin: 0;
-    text-decoration: none;
-    color: inherit;
 }
 
 a {
@@ -35,7 +41,7 @@ nav {
 }
 
 header {
-    background-color: purple;
+    background: var(--gradient);
     height: 60dvh;
 }
 
@@ -55,15 +61,16 @@ section div {
     justify-content: space-between;
     text-align: center;
     border-radius: 8px;
-    background: var(--secondairy-color);
+    background: var(--gradient) ;
     overflow: hidden;
     transition: 1s ease;
-    box-shadow: 0 5px 16px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow-gradient);
 }
 
 section div:hover {
     transition: 1s ease;
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 section img {
@@ -82,22 +89,9 @@ footer {
     left: 0;
     width: 100%;
     height: 10dvh;
-    right: 0;
-    bottom: 0;
-    background-color: whitesmoke;
+    background: var(--gradient);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* ro: 20px; */
 }
-
-footer a {
-    padding: 0;
-}
-
-/* .footer-content {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-} */
