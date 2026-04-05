@@ -12,9 +12,12 @@ export default function Header() {
         <header class="sticky grid w-full h-dvh bg-red-400 grid-cols-2 grid-rows-[auto_1fr] gap[20px] place-items-center">
             <Nav />
             <section class="flex flex-col items-start gap-2 row-start-2 justify-self-center">
-                <h1 class="text-5xl">Welcome to my portfolio!</h1>
+                <h1 class="text-5xl flex flex-col">
+                    <span>Greetings 👋!</span>
+                    <span>My name is Casper</span>
+                </h1>
                 <article class="leading-1">
-                    <p class="text-2xl">My name is Casper</p>
+                    <p class="text-2xl">Feel free to have a look around here!</p>
                     <p class="text-2xl">I am a <span id="role"></span></p>
                 </article>
                 <a href="#" download="#">
