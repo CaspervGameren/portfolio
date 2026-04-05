@@ -1,7 +1,7 @@
 import { Show, For, onMount } from "solid-js";
 import { skills } from '../data/skills';
-import Skill from "./Skill";
 import { runSkillAnimation } from "../animations/skillAnimations";
+import SkillCard from "./SkillCard";
 
 export default function () {
 
@@ -16,10 +16,10 @@ export default function () {
             <Show when={skills} fallback={<p>No skills to be shown here!</p>}>
                 <div class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(240px,1fr))]">
                     <For each={skills.languages} fallback={<p>Data could not be loaded...</p>}>
-                        {(skill) => <Skill skill={skill} />}
+                        {(skill) => <SkillCard {...skill} />}
                     </For>
                 </div>
-            </Show>
+            </Show>c
         </section>
     )
 }

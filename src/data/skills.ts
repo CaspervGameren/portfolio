@@ -1,14 +1,20 @@
-export const skills = {
+import { Skills } from "../types/skills";
+
+export const skills: Skills = {
     "languages": [
-        {"name": "HTML", "icon": "https://imgs.search.brave.com/EVI0jkHFDwQcYNZssceYZcRxbXv1gMmxJwYHoYQBSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9icmFu/ZHNsb2dvcy5jb20v/d3AtY29udGVudC91/cGxvYWRzL2ltYWdl/cy9odG1sLWxvZ28u/cG5n", "level": 80},
-        {"name": "CSS", "icon": "none", "level": 80},
-        {"name": "SCSS", "icon": "none", "level": 75},
-        {"name": "JavaScript", "icon": "none", "level": 70},
-        {"name": "TypeScript", "icon": "none", "level": 60},
-        {"name": "PHP", "icon": "none", "level": 60},
+        {"name": "HTML", "icon": "none"},
+        {"name": "CSS", "icon": "none"},
+        {"name": "SCSS", "icon": "none"},
+        {"name": "JavaScript", "icon": "none"},
+        {"name": "TypeScript", "icon": "none"},
+        {"name": "PHP", "icon": "none"},
 
     ],
     "frameworks": [
-        {"name": "SolidJS", "icon": "none", "level": 10}
+        {"name": "SolidJS", "icon": "none"}
+    ],
+    "tools": [
+        {"name": "Visual Studio Code", "icon": "none"},
+        {"name": "Figma", "icon": "none"}
     ]
 }
