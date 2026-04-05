@@ -1,5 +1,6 @@
 import { onMount } from 'solid-js';
 import { runEntraceAnimation, runScrollAnimation, runTypeIt } from '../animations/headerAnimations';
+import Nav from './Nav';
 
 export default function Header() {
     onMount(() => {
@@ -8,8 +9,9 @@ export default function Header() {
     });
 
     return (
-        <header class="sticky grid w-full h-dvh bg-red-400 grid-cols-2 grid-rows-1 gap[20px] place-items-center">
-            <section class="flex flex-col items-start gap-2">
+        <header class="sticky grid w-full h-dvh bg-red-400 grid-cols-2 grid-rows-[auto_1fr] gap[20px] place-items-center">
+            <Nav />
+            <section class="flex flex-col items-start gap-2 row-start-2 justify-self-center">
                 <h1 class="text-5xl">Welcome to my portfolio!</h1>
                 <article class="leading-1">
                     <p class="text-2xl">My name is Casper</p>
@@ -19,7 +21,7 @@ export default function Header() {
                     <button class="h-10 w-fit bg-amber-200 p-2 rounded hover:cursor-pointer">Donwload CV</button>
                 </a>
             </section>
-            <aside>
+            <aside class="row-start-2 justify-self-center">
                 <img src="/src/assets/images/thispersondoesnotexist.jpg" alt="Image of myself holding my macbook"
                     class="w-75" />
             </aside>

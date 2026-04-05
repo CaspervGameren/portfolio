@@ -8,7 +8,6 @@ const App: Component = () => {
   return (
     <>
       <Header/>
-      <Nav/>
       <main class="w-[90dvw] m-auto">
         <Skills />
         <Contact />
