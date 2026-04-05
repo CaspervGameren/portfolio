@@ -1,51 +1,10 @@
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
 import { onMount } from 'solid-js';
-import TypeIt from 'typeit';
-
-gsap.registerPlugin(ScrollTrigger);
+import { runEntraceAnimation, runScrollAnimation, runTypeIt } from '../animations/headerAnimations';
 
 export default function Header() {
     onMount(() => {
-        new TypeIt("#role", {
-            speed: 80,
-            deleteSpeed: 40,
-            loop: true,
-            waitUntilVisible: true,
-        })
-        .type("Full-Stack Developer")
-        .pause(200)
-        .delete()
-        .type("Web Designer")
-        .pause(200)
-        .delete()
-        .go()
-
-        let tl = gsap.timeline();
-        tl.from("h1", { duration: 1, opacity: 0, x: -200, ease: "power2.out", clearProps: "all" }, ">.3")
-        .from("aside", { duration: 1, opacity: 0, y: 200, ease: "power2.out", clearProps: "all" }, ">0.2")
-        .from("p", { duration: 3, opacity: 0, y: -50, ease: "power1.in" })
-        .from("a button", { duration: 3, opacity: 0, });
-
-            gsap.to("header", {
-                scrollTrigger: {
-                    trigger: "header",
-                    start: "top top",
-                    end: "+=400",
-                    scrub: 1,
-                    pin: true,
-                    pinSpacing: true,
-                },
-                height: "60dvh",
-            });
-            gsap.to("h1, p, aside", {
-                scrollTrigger: {
-                    trigger: "header",
-                    start: "top top", 
-                    end: "400",
-                    scrub: 1,
-                },
-            })
+        runEntraceAnimation(runTypeIt);
+        runScrollAnimation();
     });
 
     return (
