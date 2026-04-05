@@ -11,7 +11,7 @@ export default function Skill({ skill }: any) {
                 {Array.from({ length: 5 }, (_, i) => {
                     if (i < filled) return <div class="w-6 h-6 rounded-full bg-blue-500" />
                     if (i === filled && remainder > 0) return <div class="w-6 h-6 rounded-full" style={`background: conic-gradient(from -180deg, #3b82f6 ${remainder}%, #d1d5db ${remainder}%)`} />
-                    return <div class="w-6 h-6 rounded-full bg-gray-300" />
+                    return <div class="w-6 h-6 rounded-full bg-gray-300 card" />
                 })}
 
             </div>

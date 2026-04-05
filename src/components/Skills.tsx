@@ -1,8 +1,15 @@
-import { Show, For } from "solid-js";
+import { Show, For, onMount } from "solid-js";
 import { skills } from '../data/skills';
 import Skill from "./Skill";
+import { runSkillAnimation } from "../animations/skillAnimations";
 
 export default function () {
+
+        onMount(() => {
+            runSkillAnimation();
+            ScrollTrigger.refresh();
+        });
+    
     return (
         <section>
             My Skills:

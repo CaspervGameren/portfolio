@@ -8,7 +8,7 @@ export default function Header() {
     });
 
     return (
-        <header class="grid w-full h-dvh bg-red-400 grid-cols-2 grid-rows-1 gap[20px] place-items-center">
+        <header class="sticky grid w-full h-dvh bg-red-400 grid-cols-2 grid-rows-1 gap[20px] place-items-center">
             <section class="flex flex-col items-start gap-2">
                 <h1 class="text-5xl py-5">Welcome to my portfolio!</h1>
                 <p class="text-2xl">I am a <span id="role"></span></p>
