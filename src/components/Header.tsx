@@ -9,7 +9,7 @@ export default function Header() {
     });
 
     return (
-        <header class="sticky grid w-full h-dvh bg-red-400 grid-cols-2 grid-rows-[auto_1fr] gap[20px] place-items-center">
+        <header class="sticky text-white grid w-full h-dvh grid-cols-2 grid-rows-[auto_1fr] gap[20px] place-items-center">
             <Nav />
             <section class="flex flex-col items-start gap-2 row-start-2 justify-self-center">
                 <h1 class="text-5xl flex flex-col">
@@ -26,7 +26,7 @@ export default function Header() {
             </section>
             <aside class="row-start-2 justify-self-center">
                 <img src="/src/assets/images/thispersondoesnotexist.jpg" alt="Image of myself holding my macbook"
-                    class="w-75" />
+                    class="w-75 rounded-full" />
             </aside>
         </header>
     )
