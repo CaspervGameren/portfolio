@@ -5,10 +5,21 @@ import TypeIt from 'typeit';
 gsap.registerPlugin(ScrollTrigger);
 
 export function runEntraceAnimation(onComplete: () => void) {
+    // Session logic (Intro animation plays only when the user is first visiting the website)
+    const hasVisited = sessionStorage.getItem('visited');
+
+    if (hasVisited) {
+        onComplete();
+        return;
+    }
+
+    sessionStorage.setItem('visited', 'true');
+
+    // GSAP entrance animation logic
     const tl = gsap.timeline({ onComplete });
     tl.from("h1", { duration: 1, opacity: 0, x: -200, ease: "power2.out", clearProps: "all" })
         .from("aside", { duration: 1, opacity: 0, y: 200, ease: "power2.out", clearProps: "all" }, ">0.2")
-        .from("p", { duration: 1, opacity: 0, y: -50, ease: "power1.in", clearProps: "all" })
+        .from("header p", { duration: 1, opacity: 0, y: -40, stagger: 0.5, ease: "power1.in", clearProps: "all" })
         .from("a button", { duration: 1, opacity: 0, clearProps: "all" });
 }
 
