@@ -15,7 +15,7 @@ export const skills: Skills = {
         {"name": "Tailwind CSS", "icon": "/assets/svg/tailwindcss.svg", "color": "#06B6D4"}
     ],
     "tools": [
-        {"name": "Visual Studio Code", "icon": "none", "color": "none"},
+        {"name": "Visual Studio Code", "icon": "/assets/svg/visual-studio-code.svg", "color": "#0078d7"},
         {"name": "Figma", "icon": "/assets/svg/figma.svg", "color": "#F24E1E"}
     ]
 }

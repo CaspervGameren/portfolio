@@ -10,15 +10,14 @@ export default function Header() {
 
     return (
         <header class="sticky text-white grid w-full h-dvh grid-cols-2 grid-rows-[auto_1fr] gap[20px] place-items-center">
-            <Nav />
-            <section class="flex flex-col items-start gap-2 row-start-2 justify-self-center">
+            <section class="flex flex-col items-start gap-2 row-start-2 justify-self-center bg-black/40   rounded-2xl p-8">
                 <h1 class="text-5xl flex flex-col">
                     <span>Greetings 👋!</span>
                     <span>My name is Casper</span>
                 </h1>
                 <article class="leading-1">
-                    <p class="text-2xl">Feel free to have a look around here!</p>
-                    <p class="text-2xl">I am a <span id="role"></span></p>
+                    <p class="text-xl">Feel free to have a look around here!</p>
+                    <p class="text-xl">I am a <span id="role"></span></p>
                 </article>
                 <a href="#" download="#">
                     <button class="h-10 w-fit bg-amber-200 p-2 rounded hover:cursor-pointer">Donwload CV</button>
