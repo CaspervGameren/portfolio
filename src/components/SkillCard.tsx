@@ -1,17 +1,10 @@
+import { Icon } from '@iconify-icon/solid';
 import { Skill as SkillType } from "../types/skills";
 
-export default function SkillCard({ name, icon, color }: SkillType) {
+export default function SkillCard({ name, icon }: SkillType) {
     return (
         <div class="flex flex-col gap-2 border-2 rounded-2xl p-4 justify-center items-center">
-            <div
-                style={{
-                    "background-color": color,
-                    "mask": `url(${icon}) center/contain no-repeat`,
-                    "-webkit-mask": `url(${icon}) center/contain no-repeat`,
-                    "width": "80px",
-                    "height": "80px"
-                }}
-            />
+            <Icon icon={icon} width="80" height="80" />
             <h2>{name}</h2>
         </div>
     )
