@@ -1,6 +1,6 @@
 import { onMount } from 'solid-js';
 import { runEntraceAnimation, runScrollAnimation, runTypeIt } from '../animations/headerAnimations';
-import Nav from './Nav';
+import profileImg from '../assets/images/profile.jpg';
 
 export default function Header() {
     onMount(() => {
@@ -24,8 +24,8 @@ export default function Header() {
                 </a>
             </section>
             <aside class="row-start-2 justify-self-center">
-                <img src="/src/assets/images/thispersondoesnotexist.jpg" alt="Image of myself holding my macbook"
-                    class="w-75 rounded-full" />
+                <img src={profileImg} alt="Image of myself holding my macbook"
+                    class="w-75 rounded-full" loading="lazy" />
             </aside>
         </header>
     )

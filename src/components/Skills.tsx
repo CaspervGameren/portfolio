@@ -1,4 +1,5 @@
 import { Show, For, onMount } from "solid-js";
+import { ScrollTrigger } from 'gsap/all';
 import { skills } from '../data/skills';
 import { runSkillAnimation } from "../animations/skillAnimations";
 import SkillCard from "./SkillCard";
