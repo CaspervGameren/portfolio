@@ -1,3 +1,5 @@
+//TODO Add hover effects and mobile friendly design for nav
+
 export default function Nav() {
     return (
         <nav class="grid bg-amber-200">

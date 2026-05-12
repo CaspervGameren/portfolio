@@ -1,7 +1,7 @@
 import { Icon } from "@iconify-icon/solid";
 import { For } from "solid-js";
 
-export default function SkillCategory({ title, items }: any) {
+export default function SkillCategory({ title, items }: {title: string, items: any}) {
     return (
         <section class="flex flex-col items-center">
             <h3 class="text-2xl py-8">{title}</h3>
@@ -22,4 +22,4 @@ export default function SkillCategory({ title, items }: any) {
             </div>
         </section>
     );
-}
+} 

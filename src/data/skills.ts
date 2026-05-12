@@ -1,4 +1,4 @@
-import { Skills } from "../types/skills";
+import { Skills } from "../types/skillsData";
 
 export const skills: Skills = {
     languages: [
