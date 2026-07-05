@@ -4,8 +4,10 @@ import { Nav, Header } from './components';
 const App: Component = () => {
   return (
     <>
-      <Nav></Nav>
-      <Header></Header>
+      <main class='bg-[#222222] min-h-screen w-full flex flex-col items-center text-[#f1f1f1]'>
+        <Nav />
+        <Header />
+      </main>
     </>
   );
 };
