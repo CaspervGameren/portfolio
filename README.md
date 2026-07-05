@@ -1,36 +1,36 @@
-## Usage
+# Personal Portfolio
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+My personal portfolio can be found at [https://caspervg.com](https://caspervg.com)
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+## About
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+This is my personal portfolio site, built to showcase my projects, skills, and background. It's a living project — I'll be adding sections and polishing things over time.
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+## Tech Stack
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm run dev` or `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- [SolidJS](https://www.solidjs.com/) — reactive UI framework
+- [Vite](https://vitejs.dev/) — build tool & dev server
+- [Tailwind CSS](https://tailwindcss.com/) — utility-first styling
+- [TypeScript](https://www.typescriptlang.org/)
+- [Bun](https://bun.sh/) — package manager & runtime
 
 ## Deployment
 
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+Deployed automatically via **GitHub Actions** to **GitHub Pages**, with a custom domain (`caspervg.com`) managed through **Cloudflare DNS**. Every push to `main` triggers a fresh build and deploy.
 
-## This project was created with the [Solid CLI](https://github.com/solidjs-community/solid-cli)
+## Development
+
+```bash
+# install dependencies
+bun install
+
+# start dev server
+bun run dev
+
+# build for production
+bun run build
+```
+
+## License
+
+© 2026 Casper van Gameren. All rights reserved.
