@@ -1,14 +1,16 @@
-//TODO Add hover effects and mobile friendly design for nav
+import { Component } from "solid-js";
 
-export default function Nav() {
+export const Nav: Component = () => {
     return (
-        <nav class="grid bg-amber-200">
-            <ul class="flex justify-between w-100 justify-self-center py-5">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
+        <nav>
+            <img src="" alt="Casper website logo and home button" />
+            <ul>
+                <li class="nav-item"></li>
+                <li class="nav-item"></li>
+                <li class="nav-item"></li>
+                <li class="nav-item"></li>
             </ul>
+            <button><a href="">Quick Link</a></button>
         </nav>
-    );
+    )
 }
