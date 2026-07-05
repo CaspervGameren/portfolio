@@ -17,7 +17,7 @@ export const Nav: Component = () => {
                 </For>
             </ul>
 
-            <a href="#contact" class="flex items-center hover:brand-gradient px-6 h-[60px] rounded-xl text-white">
+            <a href="#contact" class="flex items-center hover:brand-gradient px-4 h-[60px] rounded-xl text-white">
                 Get in touch
             </a>
         </nav>
