@@ -1,3 +1,4 @@
+import './index.css';
 import type { Component } from 'solid-js';
 import { Nav, Header } from './components';
 
