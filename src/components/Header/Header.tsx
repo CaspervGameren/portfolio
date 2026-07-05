@@ -22,7 +22,7 @@ export const Header: Component = () => {
                     </a>
                 </div>
             </div>
-            <img src="/images/portfolio-image.png" alt="Foto van mijn gezicht bewerkt met AI" class="justify-self-start w-150" />
+            <img src="/images/portfolio-image.png" alt="Foto van mijn gezicht bewerkt met AI" class="justify-self-start w-120" />
         </header>
     );
 };
