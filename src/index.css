@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --grid-template-columns-dynamic: repeat(3, minmax(0, 480px));
+}
+
 @layer utilities {
   .brand-gradient {
     position: relative;
