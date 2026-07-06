@@ -2,10 +2,10 @@
 
 @theme {
   --grid-template-columns-dynamic: repeat(3, minmax(0, 480px));
-}
 
-@utility brand-gradient-text {
-  background-image: linear-gradient(
+  --section-bg: hsl(0, 0%, 17%);
+
+  --gradient-brand-hsl: linear-gradient(
     to right,
     hsl(146, 91%, 54%) 0%,
     hsl(157, 93%, 57%) 23%,
@@ -13,7 +13,8 @@
     hsl(171, 89%, 57%) 59%,
     hsl(180, 89%, 57%) 80%
   );
-  background-image: linear-gradient(
+
+  --gradient-brand-oklch: linear-gradient(
     to right,
     oklch(0.85 0.22 151deg) 0%,
     oklch(0.87 0.19 160deg) 23%,
@@ -21,7 +22,28 @@
     oklch(0.87 0.15 179deg) 59%,
     oklch(0.88 0.14 195deg) 80%
   );
+}
+
+@utility brand-gradient {
+  transition: background-image 0.3s ease;
+  background-image: var(--gradient-brand-hsl);
+  background-image: var(--gradient-brand-oklch);
+}
+
+@utility brand-gradient-text {
+  background-image: var(--gradient-brand-hsl);
+  background-image: var(--gradient-brand-oklch);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+@utility border-brand-gradient {
+  border: 1px solid transparent;
+  background: 
+    linear-gradient(var(--section-bg), var(--section-bg)) padding-box,
+    var(--gradient-brand-hsl) border-box;
+  background: 
+    linear-gradient(var(--section-bg), var(--section-bg)) padding-box,
+    var(--gradient-brand-oklch) border-box;
 }
