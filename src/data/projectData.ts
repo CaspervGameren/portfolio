@@ -1,0 +1,32 @@
+export const projectData = [
+    {
+        id: 1,
+        title: 'L.E.G.O.S.',
+        description: 'L.E.G.O.S. (Light Enhanced Guided Object Sorter) was my first project for the CLE (Contextual Learning Environment) at the Hogeschool Rotterdam. This machine used an AdaFruit Circuit Playground to detect colours based on the light value reflected from certain bricks, these would be sorted in one of 3 exits.',
+        techstack: ['HTML5/CSS', 'Adafruit CPX'],
+        imageUrl: 'https://cmgt.hr.nl/storage/uploads/2098/conversions/image-full.webp',
+        liveUrl: 'https://vince1510.github.io/LEGOS/',
+        githubUrl: 'https://github.com/Vince1510/LEGOS',
+        extraUrl: 'https://cmgt.hr.nl/projecten/legos-automatische-lego-sorteerder',
+    },
+    {
+        id: 1,
+        title: 'L.E.G.O.S.',
+        description: 'L.E.G.O.S. (Light Enhanced Guided Object Sorter) was my first project for the CLE (Contextual Learning Environment) at the Hogeschool Rotterdam. This machine used an AdaFruit Circuit Playground to detect colours based on the light value reflected from certain bricks, these would be sorted in one of 3 exits.',
+        techstack: ['HTML5/CSS', 'Adafruit CPX'],
+        imageUrl: 'https://cmgt.hr.nl/storage/uploads/2098/conversions/image-full.webp',
+        liveUrl: 'https://vince1510.github.io/LEGOS/',
+        githubUrl: 'https://github.com/Vince1510/LEGOS',
+        extraUrl: 'https://cmgt.hr.nl/projecten/legos-automatische-lego-sorteerder',
+    },
+    {
+        id: 1,
+        title: 'L.E.G.O.S.',
+        description: 'L.E.G.O.S. (Light Enhanced Guided Object Sorter) was my first project for the CLE (Contextual Learning Environment) at the Hogeschool Rotterdam. This machine used an AdaFruit Circuit Playground to detect colours based on the light value reflected from certain bricks, these would be sorted in one of 3 exits.',
+        techstack: ['HTML5/CSS', 'Adafruit CPX'],
+        imageUrl: 'https://cmgt.hr.nl/storage/uploads/2098/conversions/image-full.webp',
+        liveUrl: 'https://vince1510.github.io/LEGOS/',
+        githubUrl: 'https://github.com/Vince1510/LEGOS',
+        extraUrl: 'https://cmgt.hr.nl/projecten/legos-automatische-lego-sorteerder',
+    },
+];

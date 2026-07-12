@@ -12,10 +12,10 @@ export const Header: Component = () => {
                         Hey there, I am <strong class="brand-gradient-text font-bolder">Casper</strong>, Software Dev and student at Hogeschool Rotterdam CMGT
                     </p>
                     <div class="flex gap-4 justify-center lg:justify-start">
-                        <a href="/cv.pdf" class="flex items-center justify-center hover:brand-gradient px-4 gap-x-2 h-[60px] rounded-md bg-[#333333]/10 backdrop-blur-md border border-white/20 shadow-lg">
+                        <a href="/cv.pdf" class="flex items-center justify-center hover:brand-gradient px-4 gap-x-2 h-[60px] rounded-md bg-(section-bg) backdrop-blur-md border border-brand-gradient shadow-lg hover:text-black font-bold">
                             Get in touch
                         </a>
-                        <a href="/cv.pdf" class="flex items-center justify-center hover:brand-gradient px-4 gap-x-2 h-[60px] rounded-md bg-[#333333]/10 backdrop-blur-md border border-white/20 shadow-lg">
+                        <a href="/cv.pdf" class="flex items-center justify-center hover:brand-gradient px-4 gap-x-2 h-[60px] rounded-md bg-(section-bg) backdrop-blur-md border border-brand-gradient shadow-lg hover:text-black font-bold">
                             Download CV
                         </a>
                     </div>
