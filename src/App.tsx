@@ -1,19 +1,22 @@
-import './index.css';
-import type { Component } from 'solid-js';
-import { Nav, Header, Projects } from './components';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+import { createEffect, type Component } from 'solid-js';
+import { site } from './config/site';
+import { Nav } from './components';
+
+function setMetaData() {
+  createEffect(() => {
+    document.title = site.appName;
+
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", site.appDescription);
+  });
+}
 
 const App: Component = () => {
   return (
-    <>
-      <main class='bg-gray-900 text-white h-dvh'>
-        <Nav />
-        <Header />
-        {/* <Projects /> */}
-      </main>
-    </>
+    <Nav />
   );
 };
+
 
 export default App;
