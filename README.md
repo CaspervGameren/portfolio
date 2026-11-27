@@ -1,56 +1,36 @@
-# sv
+# Personal Portfolio
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+My personal portfolio can be found at [https://caspervg.com](https://caspervg.com)
 
-## Creating a project
+## About
 
-If you're seeing this, you've probably already done this step. Congrats!
+This is my personal portfolio site, built to showcase my projects, skills, and background. It's a living project — I'll be adding sections and polishing things over time.
 
-```sh
-# create a new project
-npx sv create my-app
+## Tech Stack
+
+- [SolidJS](https://www.solidjs.com/) — reactive UI framework
+- [Vite](https://vitejs.dev/) — build tool & dev server
+- [Tailwind CSS](https://tailwindcss.com/) — utility-first styling
+- [TypeScript](https://www.typescriptlang.org/)
+- [Bun](https://bun.sh/) — package manager & runtime
+
+## Deployment
+
+Deployed automatically via **GitHub Actions** to **GitHub Pages**, with a custom domain (`caspervg.com`) managed through **Cloudflare DNS**. Every push to `main` triggers a fresh build and deploy.
+
+## Development
+
+```bash
+# install dependencies
+bun install
+
+# start dev server
+bun run dev
+
+# build for production
+bun run build
 ```
 
-To recreate this project with the same configuration:
+## License
 
-```sh
-# recreate this project
-bun x sv@1.7.1 create --template minimal --types ts --add prettier eslint vitest="usages:component,unit" tailwindcss="plugins:typography" devtools="plugins:rolldown,vite,vitest" --install bun .
-```
-
-## Adding features
-
-Add features to your project with `sv add`:
-
-```sh
-npx sv add
-```
-
-For example, to add Tailwind CSS:
-
-```sh
-npx sv add tailwindcss
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+© 2026 Casper van Gameren. All rights reserved.
